@@ -19,6 +19,8 @@ title: "Home Page"
 		        onmouseout="changeMouseoverImg('goals');">
 	      {% endif %}
       {% endfor %}
+      <area alt="Shodor logo" shape="rect" coords="20,217,333,249"
+        href="{{ site.shodor-url }}">
     </map>
   </section>
   <section id="main-bottom-section">
@@ -37,5 +39,14 @@ title: "Home Page"
 						alt="{{ catalog.home-page-description }}"/>
 	      {% endif %}
       {% endfor %}
+      <nav id="additional-links" aria-label="Additional Links">
+        <p>
+          <a href="{{ 'sitemap' | relative_url }}">Site Map</a> |
+          <a href="{{ 'guide' | relative_url }}">Guide to Interactivate</a>
+        </p>
+      </nav>
+    </div>
+    <a id="featured-img-link"><img id="featured-img"
+      alt="Featured Activity"/></a>
   </section>
 </main>

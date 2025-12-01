@@ -29,6 +29,9 @@
           <a id="browse-link" class="v-center"
             href="{{ 'browse' | relative_url }}">Browse</a>
         </div>
+        <script async
+          src="https://cse.google.com/cse.js?cx=9bc190f387578d67a"></script>
+        <div id="search-box" class="gcse-search"></div>
       </nav>
       {% unless page.hide-h1 %}
         <h1>{{ page.title }}</h1>
@@ -59,10 +62,18 @@
     {{ content }}
     <footer>
       <span id="footer-copyright">
-        &copy; 1994&ndash;2024 Shodor Education Foundation. 
-        Currently maintained by the Department of Mathematical Sciences, 
-        Appalachian State University
+        &copy; 1994&ndash;{{ "now" | date: "%Y" }}
+        <a href="{{ site.shodor-url }}">Shodor</a>
       </span>
+      <a href="{{ '/feedback' | relative_url }}">Website Feedback</a>
+      <img id="footer-logos" class="v-center"
+          src="{{ 'img/footer-logos.gif' | relative_url }}"
+          alt="Logo with text: A resource from CSERD, a pathway portal of NSDL"
+          usemap="#nsdl-logo"/>
+      <map name="nsdl-logo">
+        <area shape="rect" coords="392,2,493,28"
+          href="https://nsdl.oercommons.org/" alt="NSDL logo" target="_blank">
+      </map>
     </footer>
   </body>
 </html>
