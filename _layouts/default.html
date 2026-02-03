@@ -33,9 +33,9 @@
       {% unless page.hide-h1 %}
         <h1>{{ page.title }}</h1>
       {% endunless %}
-      <nav id="breadcrumb" aria-label="Breadcrumbs">
+      <!--   <nav id="breadcrumb" aria-label="Breadcrumbs">
         <p>
-        <!--  <a href="{{ site.shodor-url }}">Shodor</a> ▸ 
+       <a href="{{ site.shodor-url }}">Shodor</a> ▸ 
           <a href="{{ https://appstate-math.github.io/interactivate/ }}">Interactivate</a> ▸
           {% if page.collection and page.collection != "main-catalogs" %}
             {% assign catalog-page = site.main-catalogs
@@ -52,10 +52,9 @@
                 | relative_url }}">{{ additional-breadcrumb.title }}</a> ▸
             {% endfor %}
           {% endif %}
-          {{ page.title }} -->
-          <a href="{{ https://appstate-math.github.io/interactivate/ }}">Interactivate Main Page</a>
+          {{ page.title }} 
         </p>
-      </nav>
+      </nav> -->
     </header>
     {{ content }}
     <footer>
