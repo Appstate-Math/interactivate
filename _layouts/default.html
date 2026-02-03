@@ -35,8 +35,8 @@
       {% endunless %}
       <nav id="breadcrumb" aria-label="Breadcrumbs">
         <p>
-          <a href="{{ site.shodor-url }}">Shodor</a> ▸
-          <a href="{{ site.baseurl }}">Interactivate</a> ▸
+        <!--  <a href="{{ site.shodor-url }}">Shodor</a> ▸ -->
+          <a href="{{ https://appstate-math.github.io/interactivate/ }}">Interactivate</a> ▸
           {% if page.collection and page.collection != "main-catalogs" %}
             {% assign catalog-page = site.main-catalogs
               | where: "slug", page.collection | first %}
